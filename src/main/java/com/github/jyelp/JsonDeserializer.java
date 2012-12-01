@@ -11,7 +11,7 @@ import com.google.gson.*;
 
 public class JsonDeserializer {
 
-    public YelpResponse deserializeSearch(String searchJson) {
+    public static YelpResponse deserializeSearch(String searchJson) {
         JsonParser jparser = new JsonParser();
         JsonElement json = jparser.parse(searchJson);
         
@@ -27,7 +27,7 @@ public class JsonDeserializer {
         }
     }
     
-    public YelpResponse deserializeBusiness(String businessJson) {
+    public static YelpResponse deserializeBusiness(String businessJson) {
         JsonParser jparser = new JsonParser();
         JsonElement json = jparser.parse(businessJson);
         
