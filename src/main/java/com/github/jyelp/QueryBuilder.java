@@ -46,7 +46,7 @@ public class QueryBuilder {
                 catFilter += category + ",";
             }
             if(catFilter.endsWith(",")) // remove ending comma
-                catFilter = catFilter.substring(0, catFilter.length() - 1);
+                catFilter = "category_filter=" + catFilter.substring(0, catFilter.length() - 1);
             parameters.add(catFilter);
         }
         if(searchRadius != null) {
